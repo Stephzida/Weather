@@ -48,6 +48,7 @@ form.addEventListener("submit" , async function(event){
         <td>${result.main.pressure}</td>
         <td>${result.main.humidity}</td>
         <td>${result.wind.speed}</td>
+        <td>${result.weather[0].main}</td>
         <td>${result.name}</td>
         `
         resulTable.appendChild(displayTable)
