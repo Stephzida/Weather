@@ -44,7 +44,7 @@ form.addEventListener("submit" , async function(event){
         let displayTable = document.createElement("tr")
         displayTable.innerHTML = `
         <td>${result.dt}</td>
-        <td>${result.main.temp}</td>
+        <td>${(result.main.temp - 273).toFixed(2) }</td>
         <td>${result.main.pressure}</td>
         <td>${result.main.humidity}</td>
         <td>${result.wind.speed}</td>
