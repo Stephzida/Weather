@@ -16,6 +16,15 @@
 #bright.hidden{
     display: none;
 }
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
 
 body.hidden{
     background-color: #212529;
@@ -91,7 +100,7 @@ table,tr,th,td{
     padding: 10px;
 }
 .item2.hidden table,tr,th,td{
-    border: 1px solid grey !important ;
+    border: 1px solid #212529 !important ;
     border-collapse: collapse;
     padding: 10px;
 }
